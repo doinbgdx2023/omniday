@@ -1,6 +1,6 @@
-[build]
-builder = "NIXPACKS"
+  [build]
+  builder = "NIXPACKS"
 
-[deploy]
-startCommand = "pnpm start"
-restartPolicyType = "ON_FAILURE"
+  [deploy]
+  startCommand = "pnpm start"
+  restartPolicyType = "ON_FAILURE"
