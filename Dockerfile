@@ -1,8 +1,8 @@
-FROM node:20-slim
+FROM node:22-slim
 
 WORKDIR /app
 
-# 安装依赖（利用 pnpm 缓存层）
+# 安装依赖
 COPY package.json pnpm-lock.yaml ./
 RUN corepack enable && pnpm install --frozen-lockfile
 
